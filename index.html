@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Landing Page</title>
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --navy: #0A192F;
+      --navy-light: #1A365D;
+      --gray: #4A5568;
+      --bg: #F8F9FA;
+      --white: #FFFFFF;
+      --border: #D9E2EC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--navy);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 40px 28px;
+      box-shadow:
+        0 1px 2px rgba(10, 25, 47, 0.04),
+        0 8px 24px rgba(10, 25, 47, 0.06);
+    }
+
+    .title {
+      font-size: clamp(1.45rem, 4vw, 2.15rem);
+      line-height: 1.35;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      font-size: clamp(0.92rem, 2vw, 1rem);
+      line-height: 1.7;
+      color: var(--gray);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .divider {
+      width: 72px;
+      height: 1px;
+      background-color: var(--border);
+      margin: 36px auto;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 18px 22px;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition:
+        background-color 0.18s ease,
+        color 0.18s ease,
+        opacity 0.18s ease,
+        transform 0.12s ease,
+        border-color 0.18s ease;
+      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+    }
+
+    .btn:active {
+      transform: scale(0.985);
+      opacity: 0.92;
+    }
+
+    .btn-primary {
+      background-color: var(--navy);
+      color: var(--white);
+      border: 1px solid var(--navy);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--navy-light);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--navy);
+      border:1.5px solid var(--navy);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(10, 25, 47, 0.04);
+    }
+
+    .btn i {
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 14px;
+      }
+
+      .container {
+        padding: 32px 22px;
+        border-radius: 16px;
+      }
+
+      .divider {
+        margin: 30px auto;
+      }
+
+      .btn {
+        padding: 17px 18px;
+        font-size: 0.97rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- Academic Header -->
+    <h1 class="title">
+      THERMAL ABLATION VERSUS PARATHYROIDECTOMY FOR PRIMARY
+      HYPERPARATHYROIDISM: A SYSTEMATIC REVIEW AND META-ANALYSIS
+    </h1>
+
+    <!-- Sub Header -->
+    <p class="subtitle">
+      Lama Younes, et al. |
+      Department of Internal Medicine, </br></br>
+      American University of Beirut Medical Center (AUBMC)
+    </p>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Action Buttons -->
+    <div class="button-group">
+
+      <!-- Replace # with actual PDF link -->
+      <a
+        href="https://drive.google.com/file/d/1uXk-juNdhWGPJHNzfMUmIpsHVY1YO9zM/view?usp=sharing"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+        View Full Research PDF
+      </a>
+
+      <!-- Replace # with actual LinkedIn profile -->
+      <a
+        href="https://www.linkedin.com/in/lama-younes-3619b5248?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        target="_blank"
+        class="btn btn-secondary"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+        Connect with Lama on LinkedIn
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
